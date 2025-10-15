@@ -43,3 +43,24 @@ let students = 20;
 let extraStudents = students + 3;
 extraStudents = extraStudents % 2;
 console.log(students, extraStudents)
+
+//  1. Ask the user to enter a price tag using prompt(), for example: $49.99  
+
+// 2. Convert the input from string to number  
+
+// 3. Reduce the price by 10 percent  
+
+// 4. Print out the new price using console.log(), for example: 'Your new price is: $44.99'  
+
+let priceInput = prompt("Enter price in dollar")
+
+console.log(typeof priceInput)
+
+let price = parseFloat(priceInput.replace('$', ''));
+
+console.log(typeof price)
+
+price = price * 0.9
+
+console.log("Your new price is: " + price + "$")
+
